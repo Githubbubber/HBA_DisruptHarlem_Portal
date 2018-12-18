@@ -1,34 +1,44 @@
-Mekesia Brown's contribution to the HBA Disrupt Harlem website: Disrupt Harlem Web Portal
+Design for the Project AO Web Portal
 
-Users: Administrators, instructors, teaching assistants, cohort participants, visitors interested in learning about the program (interested applicants, funders, possible mentors, sponsors)
+Users: Game devs/Administrators, general users, PAO team, guests interested in learning about the games and platform (game devs, funders/donors/sponsors, etc.)
 
 
 ---
-Features: 
+Future features: 
+- User analytics
 - Chatbox
-- File sharing
-- Daily scheduler
-- Slideshow
+- Image uploads
+- Admin portal
+- Post scheduler for update newsfeed
+- Images and video slideshow
 
 ---
 Pages:
 
 Landing page
-- Featured cohort graduate
-- Featured mentorship recap
-- Perks of joining the program
+- Video slideshow
+- Featured games
+- Featured game dev
+- Side navigation
+- Perks of joining Project AO
 
-About DH
+About PAO
 - History
-- Director
-- Info on HBA
+- Directors
+- Info on future projects
 - Goals
+- Donate
 
-Portfolio
-- Three columns of student works with the name of the project, the name of the cohort participant, the year of their cohort, and an update
+All games
+- Three columns of games showing its name, the game dev, and the genre(s) it fits
 
-Contact DH/HBA
-- Phone number
+Individual game
+- All info on that game
+
+Game dev portal
+
+Contact PAO
 - Address
 --- Map of location
-- Email
+- Phone number
+- Email(s)
