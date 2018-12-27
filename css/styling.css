@@ -1,8 +1,24 @@
-li { list-style-type: '-'; }
+li { list-style-type: none; display:inline; margin: 1%; }
+
+.genDayTime { float: left; }
+
+.gameDevDayTime { float: right; }
+
+.feature { border: 1px dashed green; }
+
+
 
 /* FOR MODAL LIGHTBOX ONLY */ 
 * {
   box-sizing: border-box;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
 }
 
 .row > .column {
@@ -108,10 +124,6 @@ li { list-style-type: '-'; }
   top: 0;
 }
 
-img {
-  margin-bottom: -4px;
-}
-
 .caption-container {
   text-align: center;
   background-color: black;
@@ -126,10 +138,6 @@ img {
 .active,
 .demo:hover {
   opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
 }
 
 .hover-shadow:hover {
