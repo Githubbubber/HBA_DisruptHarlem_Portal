@@ -3,3 +3,7 @@ static/notes.txt
 base.html
 
 images/
+venv/
+
+cert.pem
+key.pem
