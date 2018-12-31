@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="index, about, login_signup">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Project AO" content="Project AO's the Vanguard Online Portal for Adult-themed Games, Game Developers, Fans, and Users 21+" />
+
+    <title>Project AO - { pageName }</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Used for index.html poll icons-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/flick/jquery-ui.css" />
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/styling.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/payment.css') }}" /> -->
+    <link rel="stylesheet" href="../static/css/styling.css" />
+    <link rel="stylesheet" href="../static/css/payment.css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <!-- <script src="{{ url_for('static',filename='js/allscripts.js') }}"></script> -->
+    <script src="../static/js/allscripts.js"></script>
+    <!-- link to the SqPaymentForm library -->
+  </head>
+
+	<body>
+		<button id='show-paymentform' onclick='buildForm();'>Pay now</button>
+		<!-- <button id="sq-creditcard" class="button-credit-card" onclick="requestCardNonce(event)">Pay $1.00</button> -->
+
+		<div id="form-container">
+
+			<!-- Card Number: 4532759734545858
+			CVV: any three non-consecutive numbers
+			Expiration Date: any month and year in the future
+			Postal Code: 94103-->
+
+				<div id="sq-ccbox">
+				<!-- Be sure to replace the action attribute of the form with the path of the Transaction API charge endpoint URL you want to POST the nonce to (for example, "/process-card") -->
+					<form id="nonce-form" novalidate action="thankyou" method="get">
+						<fieldset>
+							<span class="label">Card Number</span>
+							<div id="sq-card-number"></div>
+							<!-- <input type="number" placeholder="Credit Card Number" /> -->
+							<div class="third">
+								<span class="label">Expiration</span>
+								<div id="sq-expiration-date"></div>
+							</div>
+							<!-- <input type="text" placeholder="Expiry Date" /> -->
+							<div class="third">
+								<span class="label">CVV</span>
+								<div id="sq-cvv"></div>
+							</div>
+							<!-- <input type="number" placeholder="CVV/CVC Number" /> -->
+							<div class="third">
+								<span class="label">Postal</span>
+								<div id="sq-postal-code"></div>
+							</div>
+						</fieldset>
+						<!-- <input type="number" placeholder="Zipcode" /> -->
+						<button id="sq-creditcard" class="button-credit-card" onclick="requestCardNonce(event)">Pay $1.00</button>
+
+						<div id="error"></div>
+
+						<!-- After a nonce is generated it will be assigned to this hidden input field. -->
+						<input type="hidden" id="card-nonce" name="nonce">
+					</form>
+				</div> <!-- end #sq-ccbox -->
+		</div> <!-- end #form-container -->
+
+    	<!-- <script type="text/javascript" src="{{ url_for('static',filename='js/payment.js') }}"></script> -->
+    	<script type="text/javascript" src="../static/js/paymentform.js"></script>
+    	<script type="text/javascript" src="../static/js/payment.js"></script>
+	</body>
+</html>

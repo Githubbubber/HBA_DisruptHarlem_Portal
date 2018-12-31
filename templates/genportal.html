@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="robots" content="index, about, login_signup">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Project AO" content="Project AO's the Vanguard Online Portal for Adult-themed Games, Game Developers, Fans, and Users 21+" />
+
+		<title>Project AO - { pageName }</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- Used for index.html poll icons-->
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/flick/jquery-ui.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" /> 
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styling.css') }}" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/genportal.css') }}" />
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<p class="currently genDayTime"></p>
+
+	<!--Top section with photo on the right and info on the left -->
+		<h1>Project AO Web Portal</h1>
+		<h2>To be added to this General User Portal page:</h2>
+		<ul>
+			<li>Profile photo on the right</li>
+			<li>Full name</li>
+			<li>Email</li>
+			<li>Start Date</li>
+			<li>Last login</li>
+		</ul>
+
+		<img src="images/placeholder.png"> &nbsp; <span>Delete</span>
+
+	<!--Tabbed sections for the updates to their account-->
+		<section id="tabs">
+		    <ul>
+		        <li><a href="#tabs-1">Login Details</a></li>
+		        <li><a href="#tabs-2">General Details</a></li>
+		        <li><a href="#tabs-3">Payment Details</a></li>
+		    </ul>
+
+	<!-- LOGIN DETAILS -->
+			<form id="tabs-1">
+				<fieldset>
+					<legend>Login Details</legend>
+					<div>
+						<label for="user_name">Username:</label>
+						<input name="user_name" type="text" placeholder="Username" />
+					</div>
+
+					<div>
+						<label for="password">Password:</label>
+						<input class="tooltip" name="password" type="password" />
+						<span class="tooltiptext">At least 6 digits, a combination of numbers and letters (at least one capital letter)</span>
+					</div>
+				</fieldset>
+	 			<input name="submit" type="submit" value="Submit changes" />
+			</form>
+
+	<!-- GENERAL DETAILS -->
+			<form id="tabs-2">
+				<fieldset>
+					<legend>General Details</legend>
+					<div>
+						<label for="fname">First name:</label>
+						<input name="fname" type="text" placeholder="First Name"/>
+					</div>
+					
+					<div>
+						<label for="lname">Last name:</label>
+						<input name="lname" type="text" placeholder="Last Name"/>
+					</div>
+
+					<div>
+						<label for="email">Email:</label>
+						<input name="email" type="email" placeholder="Your email address:" />
+					</div>
+
+					<div>
+						<label for="email">Street Address:</label>
+						<input name="address1" type="text" placeholder="Street address" />
+					</div>
+
+					<div>
+						<label for="address2">Apt. or Suite #:</label>
+						<input name="address2" type="text" placeholder="Apt. or Ste. #" />
+					</div>
+
+					<div>
+						<label>City, State, Zipcode:</label>
+						<input name="city" type="text" placeholder="City" />
+						<input name="state" type="text" placeholder="State" />
+						<input name="zip" type="text" placeholder="Zipcode" />
+						<input name="country" type="text" placeholder="Country" />
+					</div>
+				</fieldset>
+	 			<input name="submit" type="submit" value="Submit changes" />
+			</form>
+
+	<!-- PAYMENT DETAILS -->
+			<form id="tabs-3">
+				<fieldset>
+					<legend>Payment Details</legend>
+					<select>
+						<option value="visa">Visa</option>
+						<option value="mc">Mastercard</option>
+						<option value="dis">Discover</option>
+						<option value="amex">American Express</option>
+					</select>
+					<div>
+						<label for="ccNum">Credit Card Number:</label>
+						<input name="ccNum" type="text" placeholder="Credit card #"/>
+					</div>
+					
+					<div>
+						<label for="eDate">Expiry Date:</label>
+						<input name="eDate" type="text" placeholder="MM" /><input name="eDate" type="text" placeholder="YY" />
+					</div>
+
+					<div>
+						<label for="cvv">CVV Number:</label>
+						<input name="cvv" type="text" placeholder="CVV #" />
+					</div>
+				</fieldset>
+	 			<input name="submit" type="submit" value="Submit changes" />
+			</form>
+		</section>
+
+		<script src="{{ url_for('static',filename='js/allscripts.js') }}"></script>
+		<script src="{{ url_for('static',filename='js/genportal.js') }}"></script>
+	</body>
+</html>

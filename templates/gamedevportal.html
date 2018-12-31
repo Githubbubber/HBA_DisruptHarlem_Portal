@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="robots" content="index, about, login_signup">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Project AO" content="Project AO's the Vanguard Online Portal for Adult-themed Games, Game Developers, Fans, and Users 21+" />
+
+		<title>Project AO - { pageName }</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- Used for index.html poll icons-->
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/flick/jquery-ui.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" /> 
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styling.css') }}" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/gamedevportal.css') }}" />
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<p class="currently gameDevDayTime"></p>
+
+	<!--Top section with photo on left and info on right -->
+		<h1>Project AO Web Portal</h1>
+		<h2>To be added to this Admin Portal page:</h2>
+		<ul>
+			<li>Profile photo on the left</li>
+			<li>Full name, <span>Location</span></li>
+			<li>Email</li>
+			<li>Studio or Freelance Developer</li>
+			<li>Start Date</li>
+			<li>Last login</li>
+		</ul>
+
+		<p><span>Weekly earnings: </span><span id="earnings">$00.00</span> <button id="cashout"></button><span> Weekly subscriber number: </span><span id="subs">##</span></p>
+
+	<!--Tabbed sections for the updates to their account-->
+		<section id="tabs">
+		    <ul>
+		        <li><a href="#tabs-1">Images</a></li>
+		        <li><a href="#tabs-2">Video files</a></li>
+		        <li><a href="#tabs-3">All games</a></li>
+		        <li><a href="#tabs-4">Login Details</a></li>
+		        <li><a href="#tabs-5">General Details</a></li>
+		    </ul>
+
+	<!-- IMAGES -->
+			<form id="tabs-1">
+				<fieldset>
+					<legend>Game Images</legend>
+					<img class="thumbnail" src="images/placeholder.png" alt="" />
+					<span>Chosen thumbnail</span> &nbsp; <span>Delete</span>
+
+					<img src="images/placeholder.png" alt="" />
+
+					<img src="images/placeholder.png" alt="" />
+
+					<div>
+						<label for="imageUpload">Image upload:</label>
+						<input name="imageUpload" type="text" placeholder="example.jpg/png/gif" />
+					</div>
+				</fieldset>
+	 			<input name="submit" type="submit" value="Submit changes" />
+			</form>
+	
+	<!-- VIDEO FILES -->
+			<form id="tabs-2">
+				<fieldset>
+					<legend>Video files</legend>
+					<div>
+						<label for="user_name">Username:</label>
+						<input name="user_name" type="text" placeholder="Username" autofocus/>
+					</div>
+
+					<div>
+						<label for="password">Password:</label>
+						<input name="password" type="password" placeholder="6+ digits, a combination of numbers and letters (at least one capital letter)" />
+					</div>
+				</fieldset>
+	 			<input name="submit" type="submit" value="Submit changes" />
+			</form>
+
+	<!-- ALL GAMES -->
+			<form  id="tabs-3">
+				<fieldset>
+					<legend>All Games</legend>
+					<div>
+						<img src="images/placeholder.png" alt="Placeholder One" />
+						<p>Game name: </p>
+						<p>Platforms: </p>
+						<p>Year</p>
+						<p>Team members</p>
+						<p><strong>Purchase</strong> or <strong>Buy us a</strong> 
+							<select>
+								<option value="coffee">coffee</option>
+								<option value="coffee">beer</option>
+								<option value="coffee">tea</option>
+								<option value="coffee">state of the art gaming studio</option>
+							</select>
+						</p>
+						<img src="images/placeholder.png" alt="Placeholder Two" />
+						<p>Game name: </p>
+						<p>Platforms: </p>
+						<p>Year</p>
+						<p>Team members</p>
+						<p><strong>Purchase</strong> or <strong>Buy us a</strong> 
+							<select>
+								<option value="coffee">coffee</option>
+								<option value="coffee">beer</option>
+								<option value="coffee">tea</option>
+								<option value="coffee">state of the art gaming studio</option>
+							</select>
+						</p>
+
+						<img src="images/placeholder.png" alt="Placeholder Three" />
+						<p>Game name: </p>
+						<p>Platforms: </p>
+						<p>Year</p>
+						<p>Team members</p>
+						<p><strong>Purchase</strong> or <strong>Buy us a</strong> 
+							<select>
+								<option value="coffee">coffee</option>
+								<option value="coffee">beer</option>
+								<option value="coffee">tea</option>
+								<option value="coffee">state of the art gaming studio</option>
+							</select>
+						</p>
+					</div>
+
+					<legend>New Image</legend>
+					<div>
+						<label for="new_image">New image file:</label>
+						<input name="new_image" type="upload" />
+					</div>
+				</fieldset>
+	 			<input name="submit" type="submit" value="Submit changes" />
+			</form>
+
+	<!-- LOGIN DETAILS -->
+			<form id="tabs-4">
+				<fieldset>
+					<legend>Login Details</legend>
+					<div>
+						<label for="user_name">Username:</label>
+						<input name="user_name" type="text" placeholder="Username" autofocus/>
+					</div>
+
+					<div>
+						<label for="password">Password:</label>
+						<input name="password" type="password" placeholder="6+ digits, a combination of numbers and letters (at least one capital letter)" />
+					</div>
+				</fieldset>
+	 			<input name="submit" type="submit" value="Submit changes" />
+			</form>
+
+	<!-- GENERAL DETAILS -->
+			<form id="tabs-5">
+				<fieldset>
+					<legend>General Details</legend>
+					<div>
+						<label for="fname">First name:</label>
+						<input name="fname" type="text" placeholder="First Name"/>
+					</div>
+					
+					<div>
+						<label for="lname">Last name:</label>
+						<input name="lname" type="text" placeholder="Last Name"/>
+					</div>
+
+					<div>
+						<label for="email">email:</label>
+						<input name="email" type="email" placeholder="Your email address:" />
+					</div>
+				</fieldset>
+	 			<input name="submit" type="submit" value="Submit changes" />
+			</form>
+		</section>
+
+		<script src="{{ url_for('static',filename='js/allscripts.js') }}"></script>
+		<script src="{{ url_for('static',filename='js/gamedevportal.js') }}"></script>
+	</body>
+</html>

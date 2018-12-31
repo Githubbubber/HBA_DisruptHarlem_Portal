@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="robots" content="index, about, login_signup">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Project AO" content="Project AO's the Vanguard Online Portal for Adult-themed Games, Game Developers, Fans, and Users 21+" />
+
+		<title>Project AO - { pageName }</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- Used for index.html poll icons-->
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/flick/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styling.css') }}" />
+
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+		<script src="{{ url_for('static',filename='js/allscripts.js') }}"></script>
+		<script src="{{ url_for('static',filename='js/index.js') }}"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Project AO</a></li>
+					<li><a href="allgames.html">Portfolio</a></li>
+					<li><a href="gamedevportal.html">Game Dev Profile</a></li>
+					<li><a href="genportal.html">User Profile</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="indvlgame.html">Game (Single)</a></li>
+					<li><a href="login_signup.html">Login/Signup</a></li>
+					<li><a href="pricing.html">Pricing</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/QH2-TGUlwu4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		<aside>
+			<p>A list of links</p>
+			<ul>
+				<li><a href="#">A link goes here</a> </li>
+				<li><a href="#">A link</a> </li>
+				<li><a href="#">A link goes here</a> </li>
+				<li><a href="#">goes here</a> </li>
+				<li><a href="#">A link goes here</a> </li>
+				<li><a href="#">goes</a> </li>
+			</ul>
+		</aside>
+
+		<section>
+			<h1>Features</h1>
+			<div class="feature">
+					<img src="images/placeholder.png" alt="Game" />
+					<h2>Game Name</h2>
+					<p>Platform</p>
+					<p>Developer/Studio</p>
+					<ul>
+						<li>Genre/cat</li>
+						<li>Genre/cat</li>
+						<li>Genre/cat</li>
+					</ul>
+			</div>
+
+
+			<div class="feature">
+					<img src="images/placeholder.png" alt="Game" />
+					<h2>Game Name</h2>
+					<p>Platform</p>
+					<p>Developer/Studio</p>
+					<ul>
+						<li>Genre/cat</li>
+						<li>Genre/cat</li>
+						<li>Genre/cat</li>
+					</ul>
+			</div>
+
+
+			<div class="feature">
+					<img src="images/placeholder.png" alt="Game" />
+					<h2>Game Name</h2>
+					<p>Platform</p>
+					<p>Developer/Studio</p>
+					<ul>
+						<li>Genre/cat</li>
+						<li>Genre/cat</li>
+						<li>Genre/cat</li>
+					</ul>
+			</div>
+
+
+			<div class="feature">
+					<img src="images/placeholder.png" alt="Game" />
+					<h2>Game Name</h2>
+					<p>Platform</p>
+					<p>Developer/Studio</p>
+					<ul>
+						<li>Genre/cat</li>
+						<li>Genre/cat</li>
+						<li>Genre/cat</li>
+					</ul>
+			</div>
+		</section>
+
+		<section>
+			<h2>A simple poll will go here:</h2>
+			<!-- Use an element to toggle between a like/dislike icon -->
+			<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+		</section>
+
+		<footer>
+			<p>&copy; Copyright 2018 Project AO</p>
+		</footer>	
+	</body>
+</html>
